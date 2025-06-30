@@ -1,7 +1,3 @@
-Sure! Here's a clean, well-formatted version of the dataset description suitable for your GitHub `README.md` or a dataset overview file like `DATASET.md`.
-
-You can copy and paste it directly into Markdown files used by GitHub:
-
 ---
 
 # 🧠 EEG During Mental Arithmetic Task – Dataset Overview
