@@ -1,5 +1,3 @@
----
-
 # 🧠 EEG During Mental Arithmetic Task – Dataset Overview
 
 **Citation**
