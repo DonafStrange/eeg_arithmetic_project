@@ -1,0 +1,35 @@
+# Core Scientific Stack
+numpy==1.26.4
+scipy==1.13.0
+pandas==2.2.2
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# EEG Analysis
+mne==1.7.1            # Main EEG analysis library
+pyedflib==0.1.35      # For handling .edf files directly (if needed)
+
+# Feature Extraction / Complexity
+nolds==0.5.2          # For DFA, Lyapunov, and fractal metrics
+antropy==0.1.5        # Entropy measures: permutation, spectral, sample, etc.
+
+# Machine Learning
+scikit-learn==1.5.0
+
+# Visualization & Plotting
+plotly==5.22.0        # Interactive plots (optional)
+
+# Jupyter & Notebooks
+jupyterlab==4.1.6
+ipython==8.25.0
+
+# Optional but Useful Tools
+tqdm==4.66.4          # Progress bars
+notebook==7.2.0       # Traditional notebook frontend
+
+# BIDS Support (Optional)
+mne-bids==0.14        # If using BIDS-based organization
+
+# Version pinning helpers
+packaging==24.0       # For checking versions at runtime
+

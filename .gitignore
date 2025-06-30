@@ -1,0 +1,47 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Environments
+env/
+venv/
+*.egg-info/
+
+# EEG Data
+*.edf
+*.bdf
+*.fif
+*.mat
+*.npy
+*.npz
+*.csv
+*.tsv
+
+# MNE + output
+mne-python-cache/
+*.log
+*.out
+*.bak
+*.tmp
+
+# Figures
+*.png
+*.jpg
+*.pdf
+
+# Models
+*.h5
+*.pkl
+*.pt
+
+# System
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
