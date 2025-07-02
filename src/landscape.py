@@ -9,6 +9,10 @@ def compute_energy_landscape(states, grid_size=100):
     """
     Compute the energy landscape from 2D state coordinates.
 
+    This function takes EEG state vectors projected onto 2D space and computes
+    the energy landscape by estimating the probability density using Kernel Density
+    Estimation (KDE) and transforming it into energy values.
+
     Parameters:
         states (ndarray): (N, 2) PCA-projected EEG state vectors
         grid_size (int): resolution of the grid
@@ -38,6 +42,10 @@ def count_energy_wells(energy, size=3):
     """
     Count local minima (wells) in the energy landscape.
 
+    This function identifies and counts the number of local minima (energy wells)
+    in the computed energy landscape. It uses a neighborhood-based approach to
+    detect minima and optionally removes edges to avoid false detections.
+
     Parameters:
         energy (2D array): energy values over the grid
         size (int): neighborhood size for local minimum detection
@@ -63,6 +71,18 @@ def count_energy_wells(energy, size=3):
 
 
 def energy_entropy(energy):
+    """
+    Compute the entropy of the energy landscape.
+
+    This function calculates the entropy of the energy distribution, which
+    provides a measure of the complexity or randomness of the landscape.
+
+    Parameters:
+        energy (2D array): energy values over the grid
+
+    Returns:
+        entropy (float): entropy of the energy distribution
+    """
     flat = energy.ravel()
     prob = np.exp(-flat)  # Convert back to probability
     prob /= np.sum(prob)
