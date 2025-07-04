@@ -19,6 +19,8 @@ venv/
 *.npz
 *.csv
 *.tsv
+*.pkl
+*.png
 
 # MNE + output
 mne-python-cache/
