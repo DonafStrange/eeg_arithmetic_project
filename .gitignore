@@ -47,3 +47,6 @@ Thumbs.db
 .vscode/
 .idea/
 
+# notebooks
+*.pipline_rest.ipynb
+*.pipline_task.ipynb
